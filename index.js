@@ -1,10 +1,12 @@
 #! /usr/bin/env node
-import inquirer from "inquirer";
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var inquirer_1 = require("inquirer");
 // 1) computer will generate a number - Done. 
 // 2) user's input for guessing number  - Done.
 // 3) compare the number given by user and the computer generated number and then show results - Done.
-const randomNumber = Math.floor(Math.random() * 20 + 1);
-const answers = await inquirer.prompt([
+var randomNumber = Math.floor(Math.random() * 20 + 1);
+var answers = await inquirer_1.default.prompt([
     {
         name: "guessedNumber",
         type: "number",
